@@ -12,6 +12,7 @@ export class AComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('main更新code');
   }
 
 }
