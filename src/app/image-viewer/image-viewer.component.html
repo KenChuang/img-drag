@@ -1,0 +1,37 @@
+<div class="viewer">
+  <div class="main-content">
+    <div
+      class="image-container"
+      #imgContainer
+      (mousedown)="onMouseDown($event)"
+      (mouseup)="onMouseUp()"
+      (mouseleave)="onMouseLeave()"
+      (mousemove)="onMouseMove($event)"
+      (wheel)="onMouseWheel($event)"
+    >
+      <img #image [src]="images[currentIndex]" draggable="false" />
+    </div>
+
+    <div class="controls">
+      <button (click)="zoomIn()">＋ 放大</button>
+      <button (click)="zoomOut()">－ 縮小</button>
+      <button (click)="prevImage()">⬅ 上一張</button>
+      <button (click)="nextImage()">➡ 下一張</button>
+    </div>
+  </div>
+
+  <!-- 放大預覽框 -->
+  <div class="preview-panel">
+    <div
+      class="preview-container"
+      #previewContainer
+      (mousedown)="onPreviewMouseDown($event)"
+      (mouseup)="onPreviewMouseUp()"
+      (mouseleave)="onPreviewMouseLeave()"
+      (mousemove)="onPreviewMouseMove($event)"
+    >
+      <img [src]="images[currentIndex]" />
+      <div class="preview-viewport" [style]="getPreviewViewportStyle()"></div>
+    </div>
+  </div>
+</div>
