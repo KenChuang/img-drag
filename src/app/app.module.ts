@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { AComponent } from './a/a.component';
 import { BComponent } from './b/b.component';
+import { NewCComponent } from './new-c/new-c.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageViewerComponent,
     AComponent,
-    BComponent
+    BComponent,
+    NewCComponent
   ],
   imports: [
     BrowserModule,
