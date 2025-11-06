@@ -1,0 +1,6 @@
+{
+  "git.confirmSync": false,
+  "git.autorefresh": true,
+  "gitlens.currentLine.enabled": true,
+  "gitlens.hovers.enabled": true
+}
