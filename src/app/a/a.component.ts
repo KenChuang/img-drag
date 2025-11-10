@@ -12,6 +12,8 @@ export class AComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const q = 'aaa';
+    console.log(q);
   }
 
 }
