@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BComponent implements OnInit {
 
+  titleB = '顯示元件B表頭';
+
   constructor() { }
 
   ngOnInit(): void {
