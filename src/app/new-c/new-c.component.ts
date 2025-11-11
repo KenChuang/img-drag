@@ -17,4 +17,9 @@ export class NewCComponent implements OnInit {
     }
   }
 
+  doCick(){
+    const t = this.list.length;
+    console.log(t);
+  }
+
 }
