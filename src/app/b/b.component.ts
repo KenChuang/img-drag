@@ -10,6 +10,8 @@ export class BComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const ken = 'test01';
+    console.log(ken);
   }
 
 }
