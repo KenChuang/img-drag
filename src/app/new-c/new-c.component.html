@@ -1,5 +1,15 @@
-<p>顯示清單</p>
-<button (click)="doCick()">打印log</button>
-<ul>
-  <li *ngFor="let v of list">{{v}}</li>
-</ul>>
+<p>顯示清單（表格）</p>
+<button (click)="doCick()">打印 log</button>
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>工號</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let v of list">
+      <td>{{ v }}</td>
+    </tr>
+  </tbody>
+</table>
